@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юлия - Репетитор английского языка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <h1 class="nav__title">ENGLISH TEACHER</h1>
+                </div>
+                <ul class="nav__menu">
+                    <li><a href="#hero" class="nav__link">Главная</a></li>
+                    <li><a href="#about" class="nav__link">О себе</a></li>
+                    <li><a href="#services" class="nav__link">Услуги</a></li>
+                    <li><a href="#contact" class="nav__link">Контакты</a></li>
+                </ul>
+                <button class="nav__toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">Репетитор английского языка</h1>
+                    <p class="hero__subtitle">Качественное обучение для учеников 2-9 классов</p>
+                    <div class="hero__name">Юлия</div>
+                    <p class="hero__qualification">Дипломированный специалист (Лингвист-переводчик)</p>
+                    <div class="hero__buttons">
+                        <a href="#contact" class="btn btn--primary btn--lg">Связаться</a>
+                        <a href="#services" class="btn btn--outline btn--lg">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                <circle cx="60" cy="60" r="60" fill="var(--color-bg-1)"/>
+                                <circle cx="60" cy="45" r="20" fill="var(--color-primary)"/>
+                                <path d="M30 100c0-16.569 13.431-30 30-30s30 13.431 30 30" fill="var(--color-primary)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section__title">О себе</h2>
+            <div class="about__content">
+                <div class="about__card">
+                    <div class="card__body">
+                        <h3>Профессиональная квалификация</h3>
+                        <p>Дипломированный специалист с образованием лингвист-переводчик. Специализируюсь на обучении английскому языку учеников 2-9 классов.</p>
+                        <div class="about__features">
+                            <div class="feature">
+                                <div class="feature__icon">🎓</div>
+                                <span>Высшее лингвистическое образование</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__icon">👥</div>
+                                <span>Работа с учениками 2-9 классов</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__icon">🌐</div>
+                                <span>Онлайн и офлайн обучение</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__approach">
+                    <h3>Мой подход</h3>
+                    <p class="approach__text">Индивидуальный подход к каждому ученику в зависимости от планов и целей. Каждая программа обучения адаптируется под потребности и уровень конкретного ученика.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section__title">Услуги</h2>
+            <div class="services__grid">
+                <div class="service__card">
+                    <div class="service__icon">📚</div>
+                    <h3 class="service__title">Помощь с домашним заданием</h3>
+                    <p class="service__description">Разбор сложных тем и заданий, объяснение материала</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">📖</div>
+                    <h3 class="service__title">Изучение грамматики с нуля</h3>
+                    <p class="service__description">Системное изучение английской грамматики от основ</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">💭</div>
+                    <h3 class="service__title">Пополнение словарного запаса</h3>
+                    <p class="service__description">Изучение новой лексики и закрепление в речи</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">🗣️</div>
+                    <h3 class="service__title">Развитие навыков чтения и говорения</h3>
+                    <p class="service__description">Практика разговорной речи и техника чтения</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">🎧</div>
+                    <h3 class="service__title">Аудирование</h3>
+                    <p class="service__description">Развитие навыков понимания речи на слух</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section__title">Контакты</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <div class="contact__icon">📍</div>
+                        <div>
+                            <h4>Местоположение</h4>
+                            <p>Бутово парк 2 (возможно онлайн)</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">👩‍🏫</div>
+                        <div>
+                            <h4>Преподаватель</h4>
+                            <p>Юлия</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__buttons">
+                    <h3>Связаться со мной</h3>
+                    <div class="contact__actions">
+                        <a href="https://t.me/+79612843682" class="btn btn--telegram" target="_blank">
+                            <span class="btn__icon">✈️</span>
+                            Telegram
+                        </a>
+                        <a href="https://wa.me/79612843682" class="btn btn--whatsapp" target="_blank">
+                            <span class="btn__icon">💬</span>
+                            WhatsApp
+                        </a>
+                    </div>
+                    <p class="contact__phone">+7 (961) 284-36-82</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__text">
+                    <p>&copy; 2025 Юлия - Репетитор английского языка</p>
+                    <p>Качественное образование для вашего ребенка</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
