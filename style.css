@@ -1457,4 +1457,25 @@ select.form-control {
   }
 }
 
+.useful-links__card {
+  display: flex;
+  flex-wrap: wrap;       /* Позволяем перенос на новую строку */
+  gap: 2rem;
+}
+
+.useful-links__action {
+  flex: 1 1 100%;        /* Занимаем всю ширину */
+  display: flex;         
+  flex-direction: column;/* Кнопка сверху, текст снизу */
+  align-items: center;   /* Центрируем по горизонтали */
+  margin-top: 1.5rem;
+}
+
+.useful-links__action .btn {
+  max-width: 240px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
