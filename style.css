@@ -1404,3 +1404,22 @@ select.form-control {
         font-size: 1.25rem;
     }
 }
+
+/* Исправление для мобильных */
+@media (max-width: 768px) {
+    .feature__icon {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        min-height: 40px !important;
+        max-width: 40px !important;
+        max-height: 40px !important;
+        flex-shrink: 0 !important;
+        border-radius: 50% !important;
+    }
+    
+    .feature {
+        flex-wrap: nowrap !important;
+        align-items: flex-start !important;
+    }
+}
