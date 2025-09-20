@@ -1308,15 +1308,16 @@ select.form-control {
 }
 
 .useful-links__card {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    background: var(--color-surface);
-    border-radius: 20px;
-    padding: 3rem;
-    box-shadow: var(--shadow-lg);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+  display: flex;
+  flex-wrap: wrap;              /* разрешаем перенос на новую строку */
+  align-items: flex-start;
+  gap: 2rem;
+  background: var(--color-surface);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .useful-links__card:hover {
@@ -1368,8 +1369,12 @@ select.form-control {
 }
 
 .useful-links__action {
-    flex: 0 0 auto;
+    /* Занимаем всю ширину и центрируем содержимое */
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 .useful-links__button {
