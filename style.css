@@ -930,6 +930,7 @@ select.form-control {
   font-size: var(--font-size-xl);
   width: 40px;
   height: 40px;
+  aspect-ratio: 1/1;
   display: flex;
   align-items: center;
   justify-content: center;
