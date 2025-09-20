@@ -935,6 +935,9 @@ select.form-control {
   justify-content: center;
   background: var(--color-bg-2);
   border-radius: 50%;
+  flex-shrink: 0;
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .about__approach {
