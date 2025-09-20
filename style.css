@@ -1436,18 +1436,20 @@ select.form-control {
   justify-content: center;
 }
 
-/* Центрируем кнопку и ограничиваем её ширину на мобильных */
+/* Центрируем кнопку «Пройти тест» на мобильных */
 @media (max-width: 768px) {
   .test-link-action {
-    display: flex;
-    justify-content: center;
-    margin: 1.5rem 0;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 1.5rem 0 !important;
   }
-
   .test-link-action .btn {
-    width: 100%;
-    max-width: 240px;
-    margin: 0 auto;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: 240px !important;
+    margin: 0 auto !important;
   }
 }
+
 
