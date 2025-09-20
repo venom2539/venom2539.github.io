@@ -1436,9 +1436,18 @@ select.form-control {
   justify-content: center;
 }
 
+/* Центрируем кнопку и ограничиваем её ширину на мобильных */
 @media (max-width: 768px) {
+  .test-link-action {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+
   .test-link-action .btn {
     width: 100%;
-    max-width: 280px;
+    max-width: 240px;
+    margin: 0 auto;
   }
 }
+
