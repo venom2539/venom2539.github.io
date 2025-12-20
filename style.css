@@ -1729,10 +1729,6 @@ select.form-control {
   transition: all var(--duration-normal) var(--ease-standard);
 }
 
-.service__card--specialized .service__description {
-    text-align: left;
-}
-
 .service__card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
@@ -2171,4 +2167,10 @@ select.form-control {
     padding: var(--space-12);
     font-size: var(--font-size-sm);
   }
+
+  .service__card--specialized .service__description {
+    text-align: left;
+  }  
 }
+
+
