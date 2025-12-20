@@ -1998,6 +1998,10 @@ select.form-control {
   opacity: 0.8;
 }
 
+.service__card--specialized .service__description {
+  text-align: left;
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -2166,11 +2170,7 @@ select.form-control {
   .useful-links__bonus {
     padding: var(--space-12);
     font-size: var(--font-size-sm);
-  }
-
-  .service__card--specialized .service__description {
-    text-align: left;
-  }  
+  } 
 }
 
 
