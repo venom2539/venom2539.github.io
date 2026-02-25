@@ -2173,4 +2173,33 @@ select.form-control {
   } 
 }
 
+/* --- ИСПРАВЛЕНИЕ ДЛЯ КОЛОНОК "О СЕБЕ" --- */
+.about__features .feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: start; /* Выравниваем текст по верхнему краю */
+}
+
+/* Убираем лишние отступы сверху, чтобы колонки начинались на одном уровне */
+.feature__column p, 
+.feature__column ul {
+  margin-top: 0;
+}
+
+.feature__column ul {
+  padding-left: 20px;
+}
+
+.feature__column li {
+  margin-bottom: 8px;
+}
+
+/* Настраиваем красивое отображение на мобильных телефонах */
+@media (max-width: 768px) {
+  .about__features .feature {
+    grid-template-columns: 1fr; /* На узких экранах колонки встанут друг под другом */
+    gap: 24px;
+  }
+}
 
