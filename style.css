@@ -2211,20 +2211,26 @@ select.form-control {
     margin-top: 12px !important;
 }
 
-/* --- СЕКЦИЯ СТОИМОСТИ (МИНИМАЛИЗМ) --- */
-.pricing {
+/* --- СЕКЦИЯ: СТОИМОСТЬ И ГРАФИК --- */
+.info-section {
     padding: var(--space-32) 0;
     background: var(--color-background);
 }
 
-.pricing__minimal {
+.info-cards__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
+    gap: var(--space-32);
+    max-width: 800px; /* Ограничиваем ширину, чтобы карточки не разъезжались слишком далеко */
+    margin: 0 auto; /* Центрируем всю сетку */
+}
+
+.info-card {
     background: var(--color-surface);
     border: 1px solid var(--color-card-border);
     border-radius: var(--radius-lg);
     padding: 40px 32px;
     box-shadow: var(--shadow-sm);
-    max-width: 350px; /* Делаем карточку компактной */
-    margin: 0 auto; /* Размещаем ровно по центру экрана */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -2232,24 +2238,41 @@ select.form-control {
     transition: all var(--duration-normal) var(--ease-standard);
 }
 
-.pricing__minimal:hover {
+.info-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
-.pricing__minimal .pricing__price {
+.info-card__title {
+    color: var(--color-text);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-24);
+}
+
+.info-card__value {
     font-size: var(--font-size-4xl);
     font-weight: var(--font-weight-bold);
     color: var(--color-primary);
     margin: 0 0 8px 0;
 }
 
-.pricing__minimal .pricing__duration {
+.info-card__desc {
     color: var(--color-text-secondary);
     font-size: var(--font-size-lg);
     margin: 0 0 24px 0;
+    line-height: 1.5;
+    flex-grow: 1; /* Позволяет кнопкам всегда быть на одном уровне снизу */
 }
 
-.pricing__minimal .btn {
+.info-card .btn {
     width: 100%;
+}
+
+/* Настройки для мобильных телефонов (вертикальное отображение) */
+@media (max-width: 768px) {
+    .info-cards__grid {
+        grid-template-columns: 1fr; /* Выстраиваем в одну колонку */
+        gap: var(--space-24);
+        padding: 0 var(--space-16);
+    }
 }
