@@ -2173,41 +2173,40 @@ select.form-control {
   } 
 }
 
-/* --- НОВЫЙ ДИЗАЙН ДЛЯ БЛОКА "О СЕБЕ" --- */
-.about__features .feature {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: flex-start;
+/* --- СТИЛИ ДЛЯ БЛОКА "О СЕБЕ" (БЕЗ КОЛОНОК) --- */
+.about__bio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-/* Красиво оформляем блок со списком направлений */
-.feature__column ul {
-  background: var(--color-bg-1); /* Легкий синий фон из вашей палитры */
-  padding: 24px 24px 24px 40px;
-  border-radius: var(--radius-lg);
-  border-left: 4px solid var(--color-primary); /* Бирюзовая полоска слева */
-  margin: 8px 0;
+.about__bio p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--color-text);
 }
 
-.feature__column li {
-  margin-bottom: 12px;
-  line-height: 1.6;
+.bio__list {
+    background: var(--color-bg-1); /* Легкий фон */
+    padding: 20px 20px 20px 40px;
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-primary); /* Акцентная полоса слева */
+    margin: 8px 0;
 }
 
-.feature__column li:last-child {
-  margin-bottom: 0;
+.bio__list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: var(--color-text);
 }
 
-.feature__column p {
-  margin: 0;
-  line-height: 1.6;
+.bio__list li:last-child {
+    margin-bottom: 0;
 }
 
-/* Акцентируем внимание на последнем блоке (призыв записаться) */
-.feature__column:last-child p {
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-primary);
-  font-size: var(--font-size-lg);
-  margin-top: 8px;
+.bio__cta {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary) !important;
+    font-size: var(--font-size-lg);
+    margin-top: 12px !important;
 }
