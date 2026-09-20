@@ -1894,6 +1894,26 @@ select.form-control {
   line-height: 1;
 }
 
+/* --- КНОПКА INSTAGRAM --- */
+.btn--instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-12);
+  padding: var(--space-12) var(--space-24);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.btn--instagram:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
 
 .btn__icon {
   font-size: var(--font-size-lg);
@@ -1915,6 +1935,15 @@ select.form-control {
 
 .footer__content {
   text-align: center;
+}
+
+.footer__disclaimer {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  text-align: center;
+  margin-bottom: var(--space-12);
+  line-height: 1.4;
+  opacity: 0.75;
 }
 
 .footer__text p {
