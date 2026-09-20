@@ -2252,10 +2252,10 @@ select.form-control {
 
 .info-cards__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
+    grid-template-columns: minmax(auto, 380px); /* Ширина карточки */
+    justify-content: center; /* Центрирует колонку внутри контейнера */
     gap: var(--space-32);
-    max-width: 800px; /* Ограничиваем ширину, чтобы карточки не разъезжались слишком далеко */
-    margin: 0 auto; /* Центрируем всю сетку */
+    margin: 0 auto;
 }
 
 .info-card {
